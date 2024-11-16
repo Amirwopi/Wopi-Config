@@ -1651,7 +1651,8 @@ geosite:apple-ads
 ## Stats
 [![Stars](https://starchart.cc/Amirwopi/Wopi-Config.svg?variant=adaptive)](https://starchart.cc/Amirwopi/Wopi-Config)
 ## Activity
-![Alt](https://repobeats.axiom.co/api/embed/6e88aa7d66986824532760b5b14120a22c8ca813.svg "Repobeats analytics image")"""
+![Alt](https://repobeats.axiom.co/api/embed/dbdd0aa054f970fddc69bcd148118fdaa160c088.svg "Repobeats analytics image")
+"""
 
 with open('./readme.md', 'w') as file:
     file.write(readme + '\n' + create_country_table('./countries') + '\n' + stats)
