@@ -1,0 +1,44 @@
+name: App to runner and push
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout Repository Contents
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install Python Packages Requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements
+          
+      - name: Execute Python Script
+        run: python main.py
+          
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "amirwopi@gmail.com"
+          git config --local user.name "Amirwopi"
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Updated $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M %Z')"
+        env:
+          TZ: 'Asia/Tehran'
+
+      - name: Push Changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.TG_CNFG_CLLCT }}
+          branch: main
