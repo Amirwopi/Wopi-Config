@@ -6,7 +6,7 @@
 ![گواهی‌نامه گیت‌هاب](https://img.shields.io/github/license/Amirwopi/Wopi-Config?label=License&color=yellow)
 ![ستاره‌های گیت‌هاب](https://img.shields.io/github/stars/Amirwopi/Wopi-Config?label=Stars&color=red&style=flat)
 ![فورک‌های گیت‌هاب](https://img.shields.io/github/forks/Amirwopi/Wopi-Config?label=Forks&color=blue&style=flat)
-[![اجرا بر اساس زمان‌بندی](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml)
+[![اجرا بر اساس زمان‌بندی](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml)
 [![اجرا بر اساس پست](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml)
 
 
@@ -18,7 +18,7 @@
 ![GitHub](https://img.shields.io/github/license/Amirwopi/Wopi-Config?label=License&color=yellow)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Amirwopi/Wopi-Config?label=Stars&color=red&style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/Amirwopi/Wopi-Config?label=Forks&color=blue&style=flat)
-[![Execute On Schedule](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml)
+[![Execute On Schedule](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml)
 [![Execute On Push](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml)
 
 
