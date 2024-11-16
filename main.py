@@ -1485,6 +1485,7 @@ with open("./channels/networks/grpc", "w", encoding="utf-8") as file:
     file.write(base64.b64encode("\n".join(array_grpc_channels).encode("utf-8")).decode("utf-8"))
 
 readme = """
+
 ## معرفی
 این اسکریپت به‌طور سیستماتیک تنظیمات Vmess، Vless، ShadowSocks، Trojan، Reality، Hysteria، Tuic و Juicity را از کانال‌های تلگرام عمومی جمع‌آوری می‌کند. این تنظیمات بر اساس پورت‌های باز و بسته دسته‌بندی می‌شوند، ورودی‌های تکراری حذف می‌شوند، آدرس‌های پیکربندی با استفاده از آدرس‌های IP حل می‌شوند، و عناوین پیکربندی به‌گونه‌ای اصلاح می‌شوند که ویژگی‌های سرور و نوع پروتکل را نمایش دهند. این ویژگی‌ها شامل نوع شبکه و امنیت، آدرس IP و پورت، و کشور مربوط به پیکربندی می‌باشند.
 
@@ -1492,20 +1493,9 @@ readme = """
 ![گواهی‌نامه گیت‌هاب](https://img.shields.io/github/license/Amirwopi/Wopi-Config?label=License&color=yellow)
 ![ستاره‌های گیت‌هاب](https://img.shields.io/github/stars/Amirwopi/Wopi-Config?label=Stars&color=red&style=flat)
 ![فورک‌های گیت‌هاب](https://img.shields.io/github/forks/Amirwopi/Wopi-Config?label=Forks&color=blue&style=flat)
-[![اجرا بر اساس زمان‌بندی](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml)
-[![اجرا بر اساس پست](https://github.com/Amirwopi/Wopi-Config/actions/workflows/push.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/push.yml)
+[![اجرا بر اساس زمان‌بندی](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/app-runner.yml)
 
 
-
-## مقدمه 
-اسکریپت به طور سیستماتیک تنظیمات Vmess، Vless، ShadowSocks، Trojan، Reality، Hysteria، Tuic و Juicity را از کانال‌های تلگرامی عمومی جمع‌آوری می‌کند. این تنظیمات بر اساس پورت‌های باز و بسته دسته‌بندی می‌شوند، ورودی‌های تکراری حذف می‌شوند، آدرس‌های تنظیمات با استفاده از آدرس‌های IP حل می‌شوند و عناوین تنظیمات به‌گونه‌ای اصلاح می‌شوند که ویژگی‌های سرور و نوع پروتکل را منعطف کنند. این ویژگی‌ها شامل نوع شبکه و امنیت، آدرس IP و پورت، و کشور مربوط به تنظیمات می‌باشند.
-
-![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Amirwopi/Wopi-Config?label=Last%20Commit&color=%2338914b)
-![GitHub](https://img.shields.io/github/license/Amirwopi/Wopi-Config?label=License&color=yellow)
-![GitHub Repo stars](https://img.shields.io/github/stars/Amirwopi/Wopi-Config?label=Stars&color=red&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/Amirwopi/Wopi-Config?label=Forks&color=blue&style=flat)
-[![Execute On Schedule](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml)
-[![Execute On Push](https://github.com/Amirwopi/Wopi-Config/actions/workflows/push.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/push.yml)
 
 
 ## آموزش
