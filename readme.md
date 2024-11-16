@@ -1,17 +1,31 @@
-## Introduction
-The script systematically collects Vmess, Vless, ShadowSocks, Trojan, Reality, Hysteria, Tuic, and Juicity configurations from publicly accessible Telegram channels. It categorizes these configurations based on open and closed ports, eliminates any duplicate entries, resolves configuration addresses using IP addresses, and revises configuration titles to reflect server and protocol-type properties. These properties include network and security type, IP address and port, and the respective country associated with the configuration.
 
-![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/soroushmirzaei/telegram-configs-collector?label=Last%20Commit&color=%2338914b)
-![GitHub](https://img.shields.io/github/license/soroushmirzaei/telegram-configs-collector?label=License&color=yellow)
-![GitHub Repo stars](https://img.shields.io/github/stars/soroushmirzaei/telegram-configs-collector?label=Stars&color=red&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/soroushmirzaei/telegram-configs-collector?label=Forks&color=blue&style=flat)
-[![Execute On Schedule](https://github.com/soroushmirzaei/telegram-configs-collector/actions/workflows/schedule.yml/badge.svg)](https://github.com/soroushmirzaei/telegram-configs-collector/actions/workflows/schedule.yml)
-[![Execute On Push](https://github.com/soroushmirzaei/telegram-configs-collector/actions/workflows/push.yml/badge.svg)](https://github.com/soroushmirzaei/telegram-configs-collector/actions/workflows/push.yml)
+## معرفی
+این اسکریپت به‌طور سیستماتیک تنظیمات Vmess، Vless، ShadowSocks، Trojan، Reality، Hysteria، Tuic و Juicity را از کانال‌های تلگرام عمومی جمع‌آوری می‌کند. این تنظیمات بر اساس پورت‌های باز و بسته دسته‌بندی می‌شوند، ورودی‌های تکراری حذف می‌شوند، آدرس‌های پیکربندی با استفاده از آدرس‌های IP حل می‌شوند، و عناوین پیکربندی به‌گونه‌ای اصلاح می‌شوند که ویژگی‌های سرور و نوع پروتکل را نمایش دهند. این ویژگی‌ها شامل نوع شبکه و امنیت، آدرس IP و پورت، و کشور مربوط به پیکربندی می‌باشند.
 
-## Tutorial
-The list of domains to bypass, block, and proxy based on the `ir` geo-location in the `nekoray` and `nekobox` according to the core is set to `sing-box`. To set these domains, create new routes in the `nekobox` and `nekoray` and enter the domains below in the relevant `domains` section. Set the outbound value as `bypass`, `proxy`, or `block` as specified.
+![آخرین تغییرات در گیت‌هاب](https://img.shields.io/github/last-commit/Amirwopi/Wopi-Config?label=Last%20Commit&color=%2338914b)
+![گواهی‌نامه گیت‌هاب](https://img.shields.io/github/license/Amirwopi/Wopi-Config?label=License&color=yellow)
+![ستاره‌های گیت‌هاب](https://img.shields.io/github/stars/Amirwopi/Wopi-Config?label=Stars&color=red&style=flat)
+![فورک‌های گیت‌هاب](https://img.shields.io/github/forks/Amirwopi/Wopi-Config?label=Forks&color=blue&style=flat)
+[![اجرا بر اساس زمان‌بندی](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml)
+[![اجرا بر اساس پست](https://github.com/Amirwopi/Wopi-Config/actions/workflows/push.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/push.yml)
 
-- Bypass
+
+
+## مقدمه 
+اسکریپت به طور سیستماتیک تنظیمات Vmess، Vless، ShadowSocks، Trojan، Reality، Hysteria، Tuic و Juicity را از کانال‌های تلگرامی عمومی جمع‌آوری می‌کند. این تنظیمات بر اساس پورت‌های باز و بسته دسته‌بندی می‌شوند، ورودی‌های تکراری حذف می‌شوند، آدرس‌های تنظیمات با استفاده از آدرس‌های IP حل می‌شوند و عناوین تنظیمات به‌گونه‌ای اصلاح می‌شوند که ویژگی‌های سرور و نوع پروتکل را منعطف کنند. این ویژگی‌ها شامل نوع شبکه و امنیت، آدرس IP و پورت، و کشور مربوط به تنظیمات می‌باشند.
+
+![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Amirwopi/Wopi-Config?label=Last%20Commit&color=%2338914b)
+![GitHub](https://img.shields.io/github/license/Amirwopi/Wopi-Config?label=License&color=yellow)
+![GitHub Repo stars](https://img.shields.io/github/stars/Amirwopi/Wopi-Config?label=Stars&color=red&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/Amirwopi/Wopi-Config?label=Forks&color=blue&style=flat)
+[![Execute On Schedule](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/schedule.yml)
+[![Execute On Push](https://github.com/Amirwopi/Wopi-Config/actions/workflows/push.yml/badge.svg)](https://github.com/Amirwopi/Wopi-Config/actions/workflows/push.yml)
+
+
+## آموزش
+لیست دامنه‌ها برای عبور از فیلتر، مسدودسازی و پروکسی کردن بر اساس موقعیت جغرافیایی `ir` در `nekoray` و `nekobox` تنظیم شده است و به هسته `sing-box` وابسته است. برای تنظیم این دامنه‌ها، مسیرهای جدیدی در `nekobox` و `nekoray` ایجاد کرده و دامنه‌های زیر را در بخش مربوط به `domains` وارد کنید. مقدار خروجی را به `bypass`، `proxy` یا `block` بر اساس مشخصات تعیین‌شده تنظیم کنید.
+
+### بای پس
 ```
 geosite:category-bank-ir
 geosite:category-bourse-ir
@@ -29,7 +43,7 @@ geosite:category-tech-ir
 geosite:category-travel-ir
 ```
 
-- Proxy
+### پروکسی
 ```
 geosite:apple
 geosite:adobe
@@ -55,7 +69,7 @@ geosite:twitch
 geosite:discord
 ```
 
-- Block
+### مسدودسازی
 ```
 geosite:category-ads-all
 geosite:category-ads-ir
@@ -65,45 +79,49 @@ geosite:adobe-ads
 geosite:apple-ads
 ```
 
-## Protocol Type Subscription Links
-Configuration subscription links based on protocol type and separated into Telegram channels and subscription links
-| **Protocol Type** | **Mixed Configurations** | **Telegram Channels** | **Subscription Links** |
-|:---:|:---:|:---:|:---:|
-| **Juicity Configurations** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/juicity) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/juicity) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/protocols/juicity) |
-| **Hysteria Configurations** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/hysteria) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/hysteria) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/protocols/hysteria) |
-| **Tuic Configurations** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/tuic) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/tuic) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/protocols/tuic) |
-| **Reality Configurations** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/reality) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/protocols/reality) |
-| **Vless Configurations** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/vless) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/protocols/vless) |
-| **Vmess Configurations** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/vmess) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/protocols/vmess) |
-| **Trojan Configurations** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/trojan) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/protocols/trojan) |
-| **Shadowsocks Configurations** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/shadowsocks) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/shadowsocks) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/protocols/shadowsocks) |
-| **Mixed Type Configurations** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/channels) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/subscribe) |
+## لینک‌های اشتراک‌گذاری نوع پروتکل
+لینک‌های اشتراک‌گذاری پیکربندی‌ها بر اساس نوع پروتکل و تفکیک شده به کانال‌های تلگرام و لینک‌های اشتراک‌گذاری:
 
-## Network Type Subscription Links
-Configuration subscription links based on network type and separated into Telegram channels and subscription links
-| **Network Type** | **Mixed Configurations** | **Telegram Channels** | **Subscription Links** |
+| **نوع پروتکل** | **پیکربندی‌های ترکیبی** | **کانال‌های تلگرام** | **لینک‌های اشتراک‌گذاری** |
 |:---:|:---:|:---:|:---:|
-| **Google Remote Procedure Call (GRPC)** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/networks/grpc) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/networks/grpc) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/networks/grpc) |
-| **Hypertext Transfer Protocol (HTTP)** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/networks/http) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/networks/http) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/networks/http) |
-| **WebSocket Protocol (WS)** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/networks/ws) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/networks/ws) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/networks/ws) |
- | **Transmission Control Protocol (TCP)** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/networks/tcp) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/networks/tcp) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/networks/tcp) |
+| **پیکربندی‌های Juicity** | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/protocols/juicity) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/protocols/juicity) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/protocols/juicity) |
+| **پیکربندی‌های Hysteria** | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/protocols/hysteria) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/protocols/hysteria) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/protocols/hysteria) |
+| **پیکربندی‌های Tuic** | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/protocols/tuic) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/protocols/tuic) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/protocols/tuic) |
+| **پیکربندی‌های Reality** | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/protocols/reality) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/protocols/reality) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/protocols/reality) |
+| **پیکربندی‌های Vless** | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/protocols/vless) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/protocols/vless) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/protocols/vless) |
+| **پیکربندی‌های Vmess** | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/protocols/vmess) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/protocols/vmess) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/protocols/vmess) |
+| **پیکربندی‌های Trojan** | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/protocols/trojan) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/protocols/trojan) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/protocols/trojan) |
+| **پیکربندی‌های Shadowsocks** | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/protocols/shadowsocks) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/protocols/shadowsocks) | [لینک اشتراک‌گذاری](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/protocols/shadowsocks) |
 
-## Security Type Subscription Links
-Configuration subscription links based on security type and separated into Telegram channels and subscription links
-| **Security Type** | **Mixed Configurations** | **Telegram Channels** | **Subscription Links** |
+## لینک‌های اشتراک نوع شبکه
+لینک‌های اشتراک پیکربندی‌ها بر اساس نوع شبکه و جدا شده به کانال‌های تلگرام و لینک‌های اشتراک:
+
+| **نوع شبکه** | **پیکربندی‌های ترکیبی** | **کانال‌های تلگرام** | **لینک‌های اشتراک** |
 |:---:|:---:|:---:|:---:|
-| **Transport Layer Security (TLS)** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/security/tls) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/security/tls) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/security/tls) |
-| **Non Transport Layer Security (Non-TLS)** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/security/non-tls) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/security/non-tls) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/security/non-tls) |
+| **Google Remote Procedure Call (GRPC)** | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/networks/grpc) | [لینک اشتراک کانال](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/networks/grpc) | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/networks/grpc) |
+| **Hypertext Transfer Protocol (HTTP)** | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/networks/http) | [لینک اشتراک کانال](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/networks/http) | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/networks/http) |
+| **WebSocket Protocol (WS)** | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/networks/ws) | [لینک اشتراک کانال](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/networks/ws) | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/networks/ws) |
+| **Transmission Control Protocol (TCP)** | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/networks/tcp) | [لینک اشتراک کانال](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/networks/tcp) | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/networks/tcp) |
 
-## Internet Protocol Type Subscription Links
-Configuration subscription links based on internet protocol type and separated into Telegram channels and subscription links
-| **Internet Protocol Type** | **Mixed Configurations** | **Telegram Channels** | **Subscription Links** |
+## لینک‌های اشتراک نوع امنیت
+لینک‌های اشتراک پیکربندی‌ها بر اساس نوع امنیت و جدا شده به کانال‌های تلگرام و لینک‌های اشتراک:
+
+| **نوع امنیت** | **پیکربندی‌های ترکیبی** | **کانال‌های تلگرام** | **لینک‌های اشتراک** |
 |:---:|:---:|:---:|:---:|
-| **Internet Protocol Version 4 (IPV4)** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/layers/ipv4) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/layers/ipv4) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/layers/ipv4) |
-| **Internet Protocol Version 6 (IPV6)** | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/layers/ipv6) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/layers/ipv6) | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/layers/ipv6) |
+| **Transport Layer Security (TLS)** | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/security/tls) | [لینک اشتراک کانال](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/security/tls) | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/security/tls) |
+| **Non Transport Layer Security (Non-TLS)** | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/security/non-tls) | [لینک اشتراک کانال](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/security/non-tls) | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/security/non-tls) |
 
-## Country Subscription Links
-Configuration subscription links based on country for services that result in account bans if the location is changed, such as social media and artificial intelligence services
+## لینک‌های اشتراک نوع پروتکل اینترنت
+لینک‌های اشتراک پیکربندی‌ها بر اساس نوع پروتکل اینترنت و جدا شده به کانال‌های تلگرام و لینک‌های اشتراک:
+
+| **نوع پروتکل اینترنت** | **پیکربندی‌های ترکیبی** | **کانال‌های تلگرام** | **لینک‌های اشتراک** |
+|:---:|:---:|:---:|:---:|
+| **Internet Protocol Version 4 (IPV4)** | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/layers/ipv4) | [لینک اشتراک کانال](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/layers/ipv4) | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/layers/ipv4) |
+| **Internet Protocol Version 6 (IPV6)** | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/layers/ipv6) | [لینک اشتراک کانال](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/channels/layers/ipv6) | [لینک اشتراک](https://raw.githubusercontent.com/Amirwopi/Wopi-Config/main/subscribe/layers/ipv6) |
+
+## لینک‌های اشتراک بر اساس کشور
+لینک‌های اشتراک پیکربندی‌ها بر اساس کشور برای خدماتی که ممکن است منجر به مسدود شدن حساب‌ها شوند، مانند رسانه‌های اجتماعی و خدمات هوش مصنوعی:
+
 | **Code** | **Country Name** | **Subscription Link** | **Code** | **Country Name** | **Subscription Link** |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | AL | Albania | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/al/mixed) | AM | Armenia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/am/mixed) |
@@ -145,6 +163,6 @@ Configuration subscription links based on country for services that result in ac
 | US | United States | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/us/mixed) | UY | Uruguay | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/uy/mixed) |
 | VN | Viet Nam | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/vn/mixed) | VG | Virgin Islands, British | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/vg/mixed) |
 ## Stats
-[![Stars](https://starchart.cc/soroushmirzaei/telegram-configs-collector.svg?variant=adaptive)](https://starchart.cc/soroushmirzaei/telegram-configs-collector)
+[![Stars](https://starchart.cc/Amirwopi/Wopi-Config.svg?variant=adaptive)](https://starchart.cc/Amirwopi/Wopi-Config)
 ## Activity
 ![Alt](https://repobeats.axiom.co/api/embed/6e88aa7d66986824532760b5b14120a22c8ca813.svg "Repobeats analytics image")

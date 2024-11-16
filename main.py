@@ -1485,7 +1485,6 @@ with open("./channels/networks/grpc", "w", encoding="utf-8") as file:
     file.write(base64.b64encode("\n".join(array_grpc_channels).encode("utf-8")).decode("utf-8"))
 
 readme = '''
-
 ## معرفی
 این اسکریپت به‌طور سیستماتیک تنظیمات Vmess، Vless، ShadowSocks، Trojan، Reality، Hysteria، Tuic و Juicity را از کانال‌های تلگرام عمومی جمع‌آوری می‌کند. این تنظیمات بر اساس پورت‌های باز و بسته دسته‌بندی می‌شوند، ورودی‌های تکراری حذف می‌شوند، آدرس‌های پیکربندی با استفاده از آدرس‌های IP حل می‌شوند، و عناوین پیکربندی به‌گونه‌ای اصلاح می‌شوند که ویژگی‌های سرور و نوع پروتکل را نمایش دهند. این ویژگی‌ها شامل نوع شبکه و امنیت، آدرس IP و پورت، و کشور مربوط به پیکربندی می‌باشند.
 
@@ -1498,8 +1497,8 @@ readme = '''
 
 
 
-## Introduction
-The script systematically collects Vmess, Vless, ShadowSocks, Trojan, Reality, Hysteria, Tuic, and Juicity configurations from publicly accessible Telegram channels. It categorizes these configurations based on open and closed ports, eliminates any duplicate entries, resolves configuration addresses using IP addresses, and revises configuration titles to reflect server and protocol-type properties. These properties include network and security type, IP address and port, and the respective country associated with the configuration.
+## مقدمه 
+اسکریپت به طور سیستماتیک تنظیمات Vmess، Vless، ShadowSocks، Trojan، Reality، Hysteria، Tuic و Juicity را از کانال‌های تلگرامی عمومی جمع‌آوری می‌کند. این تنظیمات بر اساس پورت‌های باز و بسته دسته‌بندی می‌شوند، ورودی‌های تکراری حذف می‌شوند، آدرس‌های تنظیمات با استفاده از آدرس‌های IP حل می‌شوند و عناوین تنظیمات به‌گونه‌ای اصلاح می‌شوند که ویژگی‌های سرور و نوع پروتکل را منعطف کنند. این ویژگی‌ها شامل نوع شبکه و امنیت، آدرس IP و پورت، و کشور مربوط به تنظیمات می‌باشند.
 
 ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Amirwopi/Wopi-Config?label=Last%20Commit&color=%2338914b)
 ![GitHub](https://img.shields.io/github/license/Amirwopi/Wopi-Config?label=License&color=yellow)
@@ -1608,8 +1607,48 @@ geosite:apple-ads
 
 ## لینک‌های اشتراک بر اساس کشور
 لینک‌های اشتراک پیکربندی‌ها بر اساس کشور برای خدماتی که ممکن است منجر به مسدود شدن حساب‌ها شوند، مانند رسانه‌های اجتماعی و خدمات هوش مصنوعی:
-'''
-stats = """## Stats
+
+| **Code** | **Country Name** | **Subscription Link** | **Code** | **Country Name** | **Subscription Link** |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| AL | Albania | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/al/mixed) | AM | Armenia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/am/mixed) |
+| AU | Australia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/au/mixed) | AT | Austria | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/at/mixed) |
+| BH | Bahrain | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/bh/mixed) | BD | Bangladesh | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/bd/mixed) |
+| BE | Belgium | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/be/mixed) | BZ | Belize | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/bz/mixed) |
+| BO | Bolivia, Plurinational State of | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/bo/mixed) | BA | Bosnia and Herzegovina | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ba/mixed) |
+| BR | Brazil | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/br/mixed) | BG | Bulgaria | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/bg/mixed) |
+| CA | Canada | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ca/mixed) | CN | China | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/cn/mixed) |
+| CO | Colombia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/co/mixed) | CR | Costa Rica | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/cr/mixed) |
+| HR | Croatia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/hr/mixed) | CY | Cyprus | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/cy/mixed) |
+| CZ | Czechia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/cz/mixed) | DK | Denmark | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/dk/mixed) |
+| EC | Ecuador | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ec/mixed) | EE | Estonia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ee/mixed) |
+| FI | Finland | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/fi/mixed) | FR | France | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/fr/mixed) |
+| DE | Germany | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/de/mixed) | GR | Greece | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/gr/mixed) |
+| HK | Hong Kong | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/hk/mixed) | HU | Hungary | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/hu/mixed) |
+| IS | Iceland | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/is/mixed) | IN | India | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/in/mixed) |
+| IR | Iran, Islamic Republic of | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ir/mixed) | IE | Ireland | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ie/mixed) |
+| IL | Israel | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/il/mixed) | IT | Italy | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/it/mixed) |
+| JP | Japan | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/jp/mixed) | JO | Jordan | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/jo/mixed) |
+| KZ | Kazakhstan | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/kz/mixed) | KE | Kenya | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ke/mixed) |
+| KR | Korea, Republic of | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/kr/mixed) | KW | Kuwait | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/kw/mixed) |
+| LV | Latvia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/lv/mixed) | LT | Lithuania | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/lt/mixed) |
+| LU | Luxembourg | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/lu/mixed) | MO | Macao | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/mo/mixed) |
+| MT | Malta | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/mt/mixed) | MX | Mexico | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/mx/mixed) |
+| MD | Moldova, Republic of | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/md/mixed) | MA | Morocco | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ma/mixed) |
+| NL | Netherlands | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/nl/mixed) | NG | Nigeria | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ng/mixed) |
+| MK | North Macedonia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/mk/mixed) | NO | Norway | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/no/mixed) |
+| NA | Not Available | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/na/mixed) | PA | Panama | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/pa/mixed) |
+| PY | Paraguay | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/py/mixed) | PL | Poland | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/pl/mixed) |
+| PR | Puerto Rico | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/pr/mixed) | RO | Romania | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ro/mixed) |
+| RU | Russian Federation | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ru/mixed) | SA | Saudi Arabia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/sa/mixed) |
+| RS | Serbia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/rs/mixed) | SC | Seychelles | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/sc/mixed) |
+| SG | Singapore | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/sg/mixed) | SI | Slovenia | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/si/mixed) |
+| ES | Spain | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/es/mixed) | SE | Sweden | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/se/mixed) |
+| CH | Switzerland | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ch/mixed) | TW | Taiwan, Province of China | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/tw/mixed) |
+| TR | Türkiye | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/tr/mixed) | UA | Ukraine | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ua/mixed) |
+| AE | United Arab Emirates | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ae/mixed) | GB | United Kingdom | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/gb/mixed) |
+| US | United States | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/us/mixed) | UY | Uruguay | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/uy/mixed) |
+| VN | Viet Nam | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/vn/mixed) | VG | Virgin Islands, British | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/vg/mixed) |
+## Stats
 [![Stars](https://starchart.cc/Amirwopi/Wopi-Config.svg?variant=adaptive)](https://starchart.cc/Amirwopi/Wopi-Config)
 ## Activity
 ![Alt](https://repobeats.axiom.co/api/embed/6e88aa7d66986824532760b5b14120a22c8ca813.svg "Repobeats analytics image")"""
