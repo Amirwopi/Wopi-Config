@@ -1648,7 +1648,8 @@ geosite:apple-ads
 | AE | United Arab Emirates | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ae/mixed) | GB | United Kingdom | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/gb/mixed) |
 | US | United States | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/us/mixed) | UY | Uruguay | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/uy/mixed) |
 | VN | Viet Nam | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/vn/mixed) | VG | Virgin Islands, British | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/vg/mixed) |
-## Stats
+'''
+stats= """## Stats
 [![Stars](https://starchart.cc/Amirwopi/Wopi-Config.svg?variant=adaptive)](https://starchart.cc/Amirwopi/Wopi-Config)
 ## Activity
 ![Alt](https://repobeats.axiom.co/api/embed/dbdd0aa054f970fddc69bcd148118fdaa160c088.svg "Repobeats analytics image")
