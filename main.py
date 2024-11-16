@@ -1484,7 +1484,7 @@ with open("./channels/networks/http", "w", encoding="utf-8") as file:
 with open("./channels/networks/grpc", "w", encoding="utf-8") as file:
     file.write(base64.b64encode("\n".join(array_grpc_channels).encode("utf-8")).decode("utf-8"))
 
-readme = '''
+readme = """
 ## معرفی
 این اسکریپت به‌طور سیستماتیک تنظیمات Vmess، Vless، ShadowSocks، Trojan، Reality، Hysteria، Tuic و Juicity را از کانال‌های تلگرام عمومی جمع‌آوری می‌کند. این تنظیمات بر اساس پورت‌های باز و بسته دسته‌بندی می‌شوند، ورودی‌های تکراری حذف می‌شوند، آدرس‌های پیکربندی با استفاده از آدرس‌های IP حل می‌شوند، و عناوین پیکربندی به‌گونه‌ای اصلاح می‌شوند که ویژگی‌های سرور و نوع پروتکل را نمایش دهند. این ویژگی‌ها شامل نوع شبکه و امنیت، آدرس IP و پورت، و کشور مربوط به پیکربندی می‌باشند.
 
@@ -1648,7 +1648,7 @@ geosite:apple-ads
 | AE | United Arab Emirates | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/ae/mixed) | GB | United Kingdom | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/gb/mixed) |
 | US | United States | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/us/mixed) | UY | Uruguay | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/uy/mixed) |
 | VN | Viet Nam | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/vn/mixed) | VG | Virgin Islands, British | [Subscription Link](https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/countries/vg/mixed) |
-'''
+"""
 stats= """## Stats
 [![Stars](https://starchart.cc/Amirwopi/Wopi-Config.svg?variant=adaptive)](https://starchart.cc/Amirwopi/Wopi-Config)
 ## Activity
