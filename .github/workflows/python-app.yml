@@ -1,4 +1,4 @@
-name: Execute On Schedule
+name: Runner App
 
 on:
   schedule:
