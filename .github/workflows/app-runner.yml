@@ -1,12 +1,9 @@
-name: App to runner and push
+name: Execute On Schedule
 
 on:
-  push:
-    branches:
-      - main
-
-  workflow_dispatch:
-
+  schedule:
+    - cron: '15 * * * *' # Executes at 15 minutes past the hour.
+    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,17 +25,33 @@ jobs:
       - name: Execute Python Script
         run: python main.py
           
-      - name: Commit and Push Changes
+      - name: Commit Files
         run: |
           git config --local user.email "amirwopi@gmail.com"
           git config --local user.name "Amirwopi"
           git add -A
-          git diff-index --quiet HEAD || git commit -m "Updated $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M %Z')"
-        env:
-          TZ: 'Asia/Tehran'
-
+          git diff-index --quiet HEAD || (git commit -a -m "Updated $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M %Z')" --allow-empty)
+          
       - name: Push Changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GITWOPI_TOKEN }}
+          github_token: ${{ secrets.TG_CNFG_CLLCT }}
+          branch: main
+          
+      - name: Clean Up Files
+        run: |
+          git checkout --orphan latest_branch
+          git rm -r -f __pycache__
+          git config --local user.email "amirwopi@gmail.com"
+          git config --local user.name "Amirwopi"
+          git add -A
+          git commit -am "Updated $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M %Z')"
+          git branch -D main
+          git branch -m main
+          git push -f origin main
+          
+      - name: Push Changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.TG_CNFG_CLLCT }}
           branch: main
